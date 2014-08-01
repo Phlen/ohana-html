@@ -21,7 +21,7 @@ module.exports = function(grunt) {
       }
     },
 
-    // Configuration to be run (and then tested).
+    // Configuration to be run (and then tested ).
     html_template: {
       options: {
         beautify: {
