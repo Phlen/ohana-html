@@ -30,9 +30,9 @@ module.exports = function(grunt) {
       },
       build_html: {
         expand: true,
-        cwd: "./",
+        cwd: "./tpl",
         src: "**/*.twig",
-        dest: "./"
+        dest: "./html"
       }
     },
 

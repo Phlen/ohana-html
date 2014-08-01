@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  {% include "../base-tpl/_style.twig" %}
+  {% include "../base-tpl/_script.twig" %}
+</head>
+<body>
+{% include "../base-tpl/_header.twig" %}
+<div class="container">
+  {% include "../base-tpl/_sidebar.twig" %}
+  <div class="main dashboard">
+    <h3 class="title "><strong>仪表盘</strong></h3>
+    <div class="content">
+      <div>
+        <h3>欢迎使用ohana</h3>
+        <h4 class="sm-title">从这里开始：</h4><br/>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <p class="h4">基本信息</p>
+          <div class="message">
+            <img src="" alt="LOGO"/>
+            <div class="site-name">XXX OOO 科技有限公司</div>
+          </div>
+          <a href="website.html" class="btn btn-primary">设置网站信息</a>
+        </div>
+        <div class="col-md-4 next">
+          <p class="h4">接下来</p>
+          <a href="column.html">添加一个栏目</a><br/>
+          <a href="">新建一篇文章</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

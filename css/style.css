@@ -1,0 +1,87 @@
+/* 仪表盘 */
+
+.dashboard h3 {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.dashboard a.btn {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.dashboard .message {
+  height: 80px;
+  overflow: hidden;
+  padding-left: 80px;
+}
+
+.dashboard .message img {
+  width: 80px;
+  height: 80px;
+  background-color: #E5E5E5;
+  float: left;
+  margin-left: -80px;
+}
+
+.dashboard .site-name {
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+
+
+/* 文章管理 */
+.all-article .table {
+  border: 1px solid #DCDCDC;
+  margin-top: 40px;
+}
+.all-article .table th{text-align: center}
+.all-article ul{text-align: center;}
+.all-article ul>li { display: inline;padding: 10px;}
+
+/* 新建文章 */
+.new-article form {
+  margin-top: 30px;
+}
+
+.new-article textarea.form-control {
+  height: 150px;
+  line-height: 20px;
+  padding: 5px;
+  resize: none;
+}
+
+/*  栏目管理 */
+.column form {
+  width: 100%;
+}
+
+.column form .form-group {
+  margin-left: 20px;
+}
+
+.column .form-control {
+  width: 200px;
+  margin-left: 15px;
+}
+
+.column .table {
+  min-height: 300px;
+  margin-top: 35px;
+  text-align: left;
+  line-height: 40px;
+}
+
+/* 添加管理员 */
+.add-user form{
+  min-height: 300px;
+  margin-top: 40px;
+}
+
+/* 网站设置 */
+.web img {
+  width: 80px;
+  height: 80px;
+  background: #ccc;
+}

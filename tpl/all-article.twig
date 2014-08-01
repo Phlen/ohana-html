@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>文章管理</title>
+  {% include "../base-tpl/_style.twig" %}
+  {% include "../base-tpl/_script.twig"%}
+</head>
+<body>
+{% include "../base-tpl/_header.twig" %}
+<div class="container">
+  {% include "../base-tpl/_sidebar.twig" %}
+  <div class="main all-article">
+    <h3 class="title "><strong>文章管理</strong></h3>
+    <div class="content">
+      <table class="table">
+        <thead>
+        <tr class="row">
+          <th class="col-md-4">标题</th>
+          <th class="col-md-2">所属栏目</th>
+          <th class="col-md-2">发表时间</th>
+          <th class="col-md-4">操作</th>
+        </tr>
+        </thead>
+        <tbody class="table-condensed">
+        <tr class="row">
+          <td class="col-md-4">01</td>
+          <td class="col-md-2">02</td>
+          <td class="col-md-2">03</td>
+          <td class="col-md-4">04</td>
+        </tr>
+        <tr class="row">
+          <td class="col-md-4">01</td>
+          <td class="col-md-2">02</td>
+          <td class="col-md-2">03</td>
+          <td class="col-md-4">04</td>
+        </tr>
+        <tr class="row">
+          <td class="col-md-4">01</td>
+          <td class="col-md-2">02</td>
+          <td class="col-md-2">03</td>
+          <td class="col-md-4">04</td>
+        </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li><a href="">上一页</a></li>
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+        <li><a href="">下一页</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

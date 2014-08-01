@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>网站设置</title>
+  {% include "../base-tpl/_style.twig" %}
+  {% include "../base-tpl/_script.twig" %}
+  <script src="../js/lib/uploadify/jquery.uploadify.js"></script>
+  <script>
+    $(function() {
+      $("#file1").uploadify({
+        width: 80,
+        height: 30,
+        swf: '../js/lib/uploadify/uploadify.swf',
+        uploader: '../js/lib/uploadify/uploadify.php'
+      });
+    });
+  </script>
+</head>
+<body>
+{% include "../base-tpl/_header.twig" %}
+<div class="container">
+  {% include "../base-tpl/_sidebar.twig" %}
+  <div class="main web">
+    <div class="title"><strong>网站设置</strong></div>
+    <div class="content">
+{#      <div class="col-md-4">
+
+        <div class="web-name">
+          <span>&nbsp&nbsp</span>
+          <input type="text" name="psw">
+        </div>
+
+        <div class="block">
+          <span>网站logo：</span>
+          <div class="logo">
+
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary">保存</button>
+      </div>#}
+      <form class="form-horizontal" role="form" style="width: 365px;">
+        <div class="form-group">
+          <label class="control-label col-md-4" for=""><span class="star">*</span> 网站名称：</label>
+          <div class="col-md-8">
+            <input class="form-control" type="text"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-md-4" for="">网站 Logo：</label>
+          <div class="col-md-8">
+            <input type="hidden" value="" />
+            <img src="" alt="LOGO"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-md-4" for=""></label>
+          <div class="col-md-8">
+            {#<input class="btn btn-default" type="button" value="上传图片" />#}
+            <input id="file1" name="logo" type="file"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-md-4" for=""></label>
+          <div class="col-md-8">
+            <input class="btn btn-primary" type="submit" value="保存" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

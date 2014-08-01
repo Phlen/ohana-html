@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>栏目管理</title>
+  {% include "../base-tpl/_style.twig" %}
+  {% include "../base-tpl/_script.twig" %}
+</head>
+<body>
+{% include "../base-tpl/_header.twig" %}
+<div class="container">
+  {% include "../base-tpl/_sidebar.twig" %}
+  <div class="main column">
+    <div class="title"><strong>栏目管理</strong></div>
+    <div class="content">
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <label for="text" class="control-label">栏目名称:</label>
+          <input type="text" class="form-control" id="inputEmail3">
+        </div>
+        <div class="form-group">
+          <label for="select" class="control-label">父栏目:</label>
+            <select class=" form-control" id="select">
+              <option value="">下拉select</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-primary">添加栏目</button>
+        </div>
+      </form>
+      <div class="table">
+        <ul class="table-list">
+          <li class="row">
+            <div class="col-md-5">名称</div>
+            <div class="col-md-3">文章数</div>
+            <div class="col-md-4">操作</div>
+          </li>
+          <li class="row">
+              <div class="col-md-5"><a href="javascript:;">新闻</a></div>
+              <div class="col-md-3">100</div>
+              <div class="col-md-4 ">
+                <a href="javascript:;"> 编辑</a>
+                <a href="javascript:;">删除</a>
+              </div>
+          </li>
+          <li class="row">
+            <div class="col-md-5"><a href="javascript:;">--国际新闻</a> </div>
+            <div class="col-md-3">100</div>
+            <div class="col-md-4">
+              <a href="javascript:;" > 编辑</a>
+              <a href="javascript:;" >删除</a>
+            </div>
+          </li>
+          <li class="row">
+            <div class="col-md-5"><a href="javascript:;">--国内新闻</a> </div>
+            <div class="col-md-3">100</div>
+            <div class="col-md-4">
+              <a href="javascript:;"> 编辑</a>
+              <a href="javascript:;">删除</a>
+            </div>
+          </li>
+          <li class="row">
+            <div class="col-md-5"><a href="javascript:;">关于我们</a></div>
+            <div class="col-md-3">100</div>
+              <div class="col-md-4 ">
+                <a href="javascript:;" style="display: inline">编辑 </a>
+                <a href="javascript:;" style="display: inline">删除</a>
+              </div>
+          </li>
+          <li class="row">
+            <div class="col-md-5"><a href="javascript:;">--</a> </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-4">
+              <a href="javascript:;" > </a>
+              <a href="javascript:;" ></a>
+            </div>
+          </li>
+          <li class="row">
+            <div class="col-md-5"><a href="javascript:;">--</a> </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-4">
+              <a href="javascript:;"> </a>
+              <a href="javascript:;"></a>
+            </div>
+          </li>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

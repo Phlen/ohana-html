@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    {% include "../base-tpl/_style.twig" %}
+    {% include "../base-tpl/_script.twig"%}
+</head>
+<body>
+{% include "../base-tpl/_header.twig" %}
+<div class="container">
+  {% include "../base-tpl/_sidebar.twig" %}
+  <div class="main">
+    <div class="title"><strong>管理员</strong></div>
+    <div class="content">
+      <div class="table">
+        <ul class="table-list">
+          <li class="row">
+            <span class="col-md-4">用户名</span>
+            <span class="col-md-4">邮箱</span>
+            <span class="col-md-4">操作</span>
+          </li>
+          <li class="row">
+            <span class="col-md-4">Allenice</span>
+            <span class="col-md-4">Allenice@163.com</span>
+            <span class="col-md-4 ">
+                <a href="javascript:;">编辑 </a>
+                <a href="javascript:;">删除</a>
+            </span>
+          </li>
+          <li class="row">
+            <span class="col-md-4">Phlen</span>
+            <span class="col-md-4">Phlen@163.com</span>
+            <span class="col-md-4 ">
+                <a href="javascript:;">编辑 </a>
+                <a href="javascript:;">删除</a>
+            </span>
+          </li>
+         </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

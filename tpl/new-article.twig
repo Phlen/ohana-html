@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/new-article.css"/>
+  <title>文章管理</title>
+  {% include "../base-tpl/_style.twig" %}
+  {% include "../base-tpl/_script.twig" %}
+</head>
+<body>
+{% include "../base-tpl/_header.twig" %}
+<div class="container">
+  {% include "../base-tpl/_sidebar.twig" %}
+  <div class="main new-article">
+    <h3 class="title "><strong>新建文章</strong></h3>
+
+    <div class="content">
+      <form class="form-horizontal" role="form">
+        <div class="form-group group1">
+          <label for="input" class="col-md-2 control-label">文章标题:</label>
+
+          <div class="col-sm-6">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="select" class="col-md-2 control-label">栏目:</label>
+
+          <div class="col-md-3">
+            <select class=" form-control">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="textarea" class="col-md-2 control-label">文章正文:</label>
+
+          <div class="col-md-6">
+            <textarea class="form-control">
+
+            </textarea>
+          </div>
+        </div>
+        <div class="col-md-offset-2">
+          <button type="button" class="btn btn-primary">发布文章</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
